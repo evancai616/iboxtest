@@ -7,18 +7,21 @@
       <app-main/>
     </div>
   </div>
+  <!--<toolbar/>-->
 </template>
 
 <script>
 import { Navbar, Sidebar, AppMain } from './components'
 import ResizeMixin from './mixin/ResizeHandler'
+import Toolbar from '../topbar/Toolbar'
 
 export default {
   name: 'Layout',
   components: {
     Navbar,
     Sidebar,
-    AppMain
+    AppMain,
+    Toolbar
   },
   mixins: [ResizeMixin],
   computed: {
